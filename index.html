@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alice Nguyen | Vietnam Market Entry Consultant & Local Representative</title>
+<meta name="description" content="Helping foreign businesses, investors, expats, travelers and families navigate Vietnam with confidence. Market entry, supplier sourcing, local representation, relocation and travel assistance in Ho Chi Minh City.">
+<meta property="og:title" content="Alice Nguyen | Vietnam Market Entry Consultant & Local Representative">
+<meta property="og:description" content="Your trusted local partner in Vietnam. Book a free consultation.">
+<meta property="og:image" content="img/hero-saigon.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+/* Layout: dark navy brand page, gold rule accents, 1120px column, sections alternate navy / deep-navy */
+:root{
+  --navy:#0B1A2F; --navy2:#102542; --navy3:#15304F; --ink:#F3F5F9; --muted:#AEB9CC; --gold:#D4AF37; --gold2:#F0D27A; --line:rgba(212,175,55,.28); --card:#13294A;
+  --display:"Montserrat",Arial,Helvetica,sans-serif; --body:"Source Sans 3","Segoe UI",Arial,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--navy);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--display);margin:0;text-wrap:balance;line-height:1.15}
+p{margin:0}
+a{color:inherit}
+.wrap{width:min(1120px,100%);margin-inline:auto;padding-inline:20px}
+.eyebrow{font-family:var(--display);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:4px;font-family:var(--display);font-weight:700;font-size:14px;letter-spacing:.04em;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-gold{background:var(--gold);color:#1a1a1a}
+.btn-gold:hover{background:var(--gold2)}
+.btn-ghost{border-color:rgba(255,255,255,.35);color:var(--ink);background:transparent}
+.btn-ghost:hover{border-color:var(--gold)}
+.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(11,26,47,.86);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:68px}
+.logo{font-family:var(--display);font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:14px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo i{display:block;width:26px;height:2px;background:var(--gold)}
+.nav nav{display:flex;gap:28px;font-size:14px;font-weight:500}
+.nav nav a{text-decoration:none;color:var(--muted)}
+.nav nav a:hover{color:var(--ink)}
+@media(max-width:860px){.nav nav{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;isolation:isolate}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;z-index:-2}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(11,26,47,.96) 0%,rgba(11,26,47,.86) 45%,rgba(11,26,47,.35) 100%)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,640px);padding-block:110px 120px}
+.hero h1{font-size:clamp(34px,5.4vw,60px);font-weight:800;text-transform:uppercase;letter-spacing:.01em;margin-block:18px 20px}
+.hero h1 span{color:var(--gold)}
+.hero .lead{font-size:clamp(17px,2vw,21px);color:#D9E0EC;max-width:56ch}
+.hero .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:24px;margin-top:44px;font-size:14px;color:var(--muted)}
+.hero .meta b{color:var(--ink);font-weight:600}
+.rule{width:64px;height:3px;background:var(--gold)}
+
+/* sections */
+section{padding-block:88px}
+.alt{background:var(--navy2)}
+.sec-head{display:grid;gap:14px;max-width:62ch;margin-bottom:46px}
+.sec-head h2{font-size:clamp(26px,3.4vw,38px);font-weight:700}
+.sec-head p{color:var(--muted);font-size:18px}
+
+/* who */
+.who{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08)}
+.who div{background:var(--navy);padding:26px 24px;display:grid;gap:8px}
+.who h4{font-size:16px;font-weight:700}
+.who p{font-size:15px;color:var(--muted)}
+.who svg{width:26px;height:26px;stroke:var(--gold);fill:none;stroke-width:1.6}
+
+/* services */
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid rgba(255,255,255,.07);padding:30px 28px 28px;display:grid;grid-template-rows:auto auto 1fr auto;gap:14px;min-width:0;position:relative}
+.card::after{content:"";position:absolute;left:28px;right:28px;top:0;height:2px;background:var(--gold);opacity:.9}
+.card .n{font-family:var(--display);font-size:12px;letter-spacing:.2em;color:var(--gold);font-weight:600}
+.card h3{font-size:21px;font-weight:700}
+.card ul{margin:0;padding:0;list-style:none;display:grid;gap:7px;color:#D1D9E6;font-size:15.5px}
+.card li{padding-left:22px;position:relative}
+.card li::before{content:"";position:absolute;left:0;top:9px;width:11px;height:6px;border-left:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(-45deg)}
+.card a{font-family:var(--display);font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--gold);text-decoration:none}
+
+/* why */
+.why{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center}
+.why blockquote{margin:0;font-family:var(--display);font-size:clamp(24px,3.2vw,36px);font-weight:600;line-height:1.25}
+.why blockquote span{color:var(--gold)}
+.why ol{margin:0;padding:0;list-style:none;display:grid;gap:22px;counter-reset:w}
+.why li{display:grid;grid-template-columns:44px 1fr;gap:16px;align-items:start}
+.why li::before{counter-increment:w;content:counter(w,decimal-leading-zero);font-family:var(--display);color:var(--gold);font-weight:700;font-size:15px;border:1px solid var(--line);width:44px;height:44px;display:grid;place-items:center}
+.why h4{font-size:17px;margin-bottom:4px}
+.why p{color:var(--muted);font-size:15.5px}
+@media(max-width:860px){.why{grid-template-columns:1fr;gap:36px}}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.step{border-top:1px solid var(--line);padding-top:22px;display:grid;gap:10px}
+.step .n{font-family:var(--display);color:var(--gold);font-weight:700;letter-spacing:.2em;font-size:12px}
+.step h3{font-size:20px}
+.step p{color:var(--muted);font-size:15.5px}
+@media(max-width:760px){.steps{grid-template-columns:1fr}}
+
+/* testimonials */
+.tm{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.tm figure{margin:0;background:var(--navy);border:1px solid rgba(255,255,255,.08);padding:28px;display:grid;gap:18px}
+.tm blockquote{margin:0;font-size:17px;color:#E3E8F1;font-style:italic}
+.tm figcaption{font-size:14px;color:var(--muted)}
+.tm figcaption b{display:block;color:var(--ink);font-style:normal;font-weight:600}
+.note{font-size:13px;color:var(--muted);margin-top:16px}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.contact .info{display:grid;gap:22px}
+.contact .info h2{font-size:clamp(26px,3.4vw,38px)}
+.contact dl{margin:0;display:grid;gap:14px}
+.contact dt{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-family:var(--display);font-weight:600}
+.contact dd{margin:2px 0 0;font-size:17px;user-select:all}
+form{background:var(--card);border:1px solid rgba(255,255,255,.07);padding:30px;display:grid;gap:16px}
+form label{display:grid;gap:6px;font-size:13px;font-weight:600;color:var(--muted);letter-spacing:.04em;min-width:0}
+form input,form select,form textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--navy);border:1px solid rgba(255,255,255,.14);padding:12px 14px;border-radius:3px;width:100%}
+form .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+form textarea{min-height:110px;resize:vertical}
+form .btn{justify-self:start}
+.ok{background:rgba(212,175,55,.12);border:1px solid var(--line);padding:14px 16px;font-size:15px}
+@media(max-width:860px){.contact{grid-template-columns:1fr}form .row{grid-template-columns:1fr}}
+
+footer{border-top:1px solid rgba(255,255,255,.08);padding-block:34px;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="logo" href="#top"><i></i>Alice Nguyen</a>
+  <nav><a href="#who">Who I help</a><a href="#services">Services</a><a href="#why">Why me</a><a href="#how">How it works</a><a href="#contact">Contact</a></nav>
+  <a class="btn btn-gold" href="#contact" style="padding:11px 18px">Book a free consultation</a>
+</div></header>
+
+<section class="hero" id="top" style="padding:0">
+  <img src="img/hero-saigon.jpg" alt="Ho Chi Minh City skyline at night">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Ms. Alice Nguyen · Ho Chi Minh City</p>
+      <h1>Vietnam market entry consultant <span>&amp; local representative</span></h1>
+      <p class="lead">Helping foreign businesses, investors, expats, travelers and families navigate Vietnam with confidence. When you need something done in Vietnam, you only need one trusted local partner.</p>
+      <div class="cta"><a class="btn btn-gold" href="#contact">Book a free consultation</a><a class="btn btn-ghost" href="#services">Explore services</a></div>
+      <div class="meta"><span><b>English · Vietnamese</b> fluent</span><span><b>Legal &amp; business</b> background</span><span><b>On the ground</b> in Vietnam</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="who" class="alt"><div class="wrap">
+  <div class="sec-head"><p class="eyebrow">Who I help</p><h2>Businesses, investors, expats and travelers coming to Vietnam</h2><p>Whether you are entering the market, sourcing products, relocating or visiting for a week, you don't have to do it alone.</p></div>
+  <div class="who">
+    <div><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-5h6v5"/></svg><h4>Foreign companies entering Vietnam</h4><p>Market entry, company setup, licensing and compliance.</p></div>
+    <div><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18M5.5 5.5l13 13M18.5 5.5l-13 13"/></svg><h4>International investors</h4><p>Due diligence, partner verification and local representation.</p></div>
+    <div><svg viewBox="0 0 24 24"><path d="M4 7h16v13H4zM8 7V4h8v3M4 13h16"/></svg><h4>Import &amp; export companies</h4><p>Supplier sourcing, factory audits and trade documentation.</p></div>
+    <div><svg viewBox="0 0 24 24"><path d="M3 20h18M5 20V9l5 3V9l5 3V9l4 2v9"/></svg><h4>Manufacturers &amp; sourcing teams</h4><p>Product sourcing, quality inspections and procurement support.</p></div>
+    <div><svg viewBox="0 0 24 24"><path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12zM12 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg><h4>Business travelers &amp; executives</h4><p>Interpreter, meeting coordination and a local business companion.</p></div>
+    <div><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6"/></svg><h4>Individuals &amp; families relocating</h4><p>Apartment and school search, visa, bank account and settling in.</p></div>
+  </div>
+</div></section>
+
+<section id="services"><div class="wrap">
+  <div class="sec-head"><p class="eyebrow">What I do</p><h2>Six ways I can support you in Vietnam</h2><p>From establishing a company to picking you up at the airport, every service is delivered by one person you already know and trust.</p></div>
+  <div class="svc">
+    <article class="card"><span class="n">01</span><h3>Vietnam Market Entry</h3><ul><li>Market research, validation &amp; entry strategy</li><li>Company incorporation &amp; business licensing</li><li>Regulatory, tax &amp; legal guidance</li><li>Recruitment, sales channels &amp; distributor matching</li></ul><a href="#contact">Discuss market entry →</a></article>
+    <article class="card"><span class="n">02</span><h3>Trade With Vietnam</h3><ul><li>Supplier &amp; product sourcing</li><li>Factory verification, audits &amp; quality inspections</li><li>Import/export, logistics &amp; trade documents</li><li>Background checks &amp; commercial risk assessment</li></ul><a href="#contact">Find reliable suppliers →</a></article>
+    <article class="card"><span class="n">03</span><h3>Local Representation</h3><ul><li>Attending meetings &amp; visiting factories for you</li><li>Negotiating on your behalf</li><li>Project follow-up &amp; local communication</li><li>Government procedures, interpretation &amp; translation</li></ul><a href="#contact">Be represented in Vietnam →</a></article>
+    <article class="card"><span class="n">04</span><h3>Travel &amp; Business Assistance</h3><ul><li>Personal interpreter (English ↔ Vietnamese)</li><li>Meeting coordination &amp; appointment scheduling</li><li>Airport pickup, hotel &amp; transport arrangements</li><li>Factory visits &amp; government office assistance</li></ul><a href="#contact">Plan your business trip →</a></article>
+    <article class="card"><span class="n">05</span><h3>Live in Vietnam</h3><ul><li>Apartment &amp; school search</li><li>Visa support &amp; bank account assistance</li><li>SIM card, driver &amp; medical appointments</li><li>Daily concierge &amp; personal assistant support</li></ul><a href="#contact">Make your move simple →</a></article>
+    <article class="card"><span class="n">06</span><h3>Travel Assistance &amp; Concierge</h3><ul><li>Itinerary suggestions &amp; restaurant reservations</li><li>Local interpreter &amp; cultural guidance</li><li>Shopping, currency &amp; internet setup</li><li>Medical &amp; emergency assistance, 24/7 local contact</li></ul><a href="#contact">Enjoy Vietnam with local help →</a></article>
+  </div>
+</div></section>
+
+<section id="why" class="alt"><div class="wrap why">
+  <blockquote>"I can represent you in Vietnam <span>even when you're thousands of miles away.</span>"</blockquote>
+  <ol>
+    <li><div><h4>One point of contact for everything</h4><p>Legal, business, trade and personal matters handled by a single trusted partner instead of five different agencies.</p></div></li>
+    <li><div><h4>Real presence on the ground</h4><p>Based in Ho Chi Minh City. I attend the meeting, visit the factory and follow up in person.</p></div></li>
+    <li><div><h4>Fluent in both worlds</h4><p>English and Vietnamese, with a legal and business background to translate not just words but requirements.</p></div></li>
+    <li><div><h4>Flexible, from a day to a year</h4><p>A three-day business trip or a long-term company setup. The scope follows your needs.</p></div></li>
+  </ol>
+</div></section>
+
+<section id="how"><div class="wrap">
+  <div class="sec-head"><p class="eyebrow">How it works</p><h2>Three steps to a trusted partner in Vietnam</h2></div>
+  <div class="steps">
+    <div class="step"><span class="n">Step 1</span><h3>Book a free consultation</h3><p>Tell me about your goals in Vietnam. We talk online or in person in Ho Chi Minh City.</p></div>
+    <div class="step"><span class="n">Step 2</span><h3>Get a tailored plan</h3><p>You receive a clear scope, timeline and quote. No hidden fees, no obligation.</p></div>
+    <div class="step"><span class="n">Step 3</span><h3>I handle it in Vietnam</h3><p>You stay informed with regular updates while I take care of everything locally.</p></div>
+  </div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <div class="sec-head"><p class="eyebrow">Client stories</p><h2>What clients say</h2></div>
+  <div class="tm">
+    <figure><blockquote>"Alice verified three suppliers for us in one week and sat in every negotiation. We signed with confidence."</blockquote><figcaption><b>Sourcing manager</b>Furniture importer, Germany</figcaption></figure>
+    <figure><blockquote>"From company registration to our first hire, she guided every step. Setting up in Vietnam felt simple."</blockquote><figcaption><b>Founder</b>Software company, Singapore</figcaption></figure>
+    <figure><blockquote>"Apartment, school, bank, visa. Our family was settled in Saigon within a month thanks to Alice."</blockquote><figcaption><b>Relocating family</b>Australia</figcaption></figure>
+  </div>
+  <p class="note">Example testimonials for layout preview. They will be replaced with real client quotes.</p>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+  <div class="info">
+    <p class="eyebrow">Book a free consultation</p>
+    <h2>Let's discuss your goals and find the right solution together</h2>
+    <p style="color:var(--muted)">Reply within one business day. Consultations are available online or in person in Ho Chi Minh City.</p>
+    <dl>
+      <div><dt>Phone / WhatsApp</dt><dd>+84 334 095 326</dd></div>
+      <div><dt>Email</dt><dd>alice.nguyen.lawbiz@gmail.com</dd></div>
+      <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/alice-nguyen-lawbiz" target="_blank" rel="noopener">linkedin.com/in/alice-nguyen-lawbiz</a></dd></div>
+    </dl>
+  </div>
+  <form id="consult">
+    <div class="row">
+      <label>Full name<input id="f-name" name="name" required placeholder="Your name"></label>
+      <label>Email<input id="f-email" name="email" type="email" required placeholder="you@company.com"></label>
+    </div>
+    <div class="row">
+      <label>Country<input id="f-country" name="country" placeholder="Where are you based?"></label>
+      <label>I need help with<select id="f-service" name="service"><option>Vietnam Market Entry</option><option>Trade With Vietnam</option><option>Local Representation</option><option>Travel &amp; Business Assistance</option><option>Live in Vietnam</option><option>Travel Assistance &amp; Concierge</option></select></label>
+    </div>
+    <label>Message<textarea id="f-msg" name="message" placeholder="Tell me briefly about your plans in Vietnam"></textarea></label>
+    <button class="btn btn-gold" type="submit">Request my free consultation</button>
+    <div class="ok" id="ok" hidden>Thank you. On the live website this message is delivered to Alice's inbox and you receive a reply within one business day.</div>
+  </form>
+</div></section>
+
+<footer><div class="wrap"><span>© 2026 Alice Nguyen · Vietnam Market Entry Consultant &amp; Local Representative</span><span>Ho Chi Minh City, Vietnam</span></div></footer>
+
+<script>
+document.getElementById('consult').addEventListener('submit',function(e){e.preventDefault();document.getElementById('ok').hidden=false;});
+</script>
+</body>
+</html>
